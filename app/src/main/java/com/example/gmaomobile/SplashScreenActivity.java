@@ -1,0 +1,40 @@
+package com.example.gmaomobile;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+
+import com.example.gmaomobile.controller.LoginActivity;
+
+public class SplashScreenActivity extends AppCompatActivity {
+
+
+    private ImageView iv;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_splash_screen);
+
+
+        iv = (ImageView) findViewById(R.id.img1);
+
+        Animation myanim = AnimationUtils.loadAnimation(this,R.anim.mytransition);
+        iv.startAnimation(myanim);
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                final Intent i = new Intent(SplashScreenActivity.this, LoginActivity.class);
+                startActivity(i);
+                finish();
+            }
+        },3000);
+
+    }
+}

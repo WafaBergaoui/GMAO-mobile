@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Black"
+    tools:context=".controller.DetailInterventionActivity">
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="Title :"
+            android:textColor="@color/redclair"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="6"
+            android:textColor="@color/Black"
+            android:background="@color/white" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="Priority :"
+            android:textColor="@color/redclair"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/priorityView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="6"
+            android:textColor="@color/Black"
+            android:background="@color/white" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="Equipment :"
+            android:textColor="@color/redclair"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/equipmentView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="6"
+            android:textColor="@color/Black"
+            android:background="@color/white" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="Description :"
+            android:textColor="@color/redclair"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/descriptionView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="6"
+            android:textColor="@color/Black"
+            android:background="@color/white" />
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
